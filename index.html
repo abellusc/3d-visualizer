@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>blocks game</title>
+        <style>
+            body {
+                margin: 0;
+                width: 100%;
+                height: 100%;
+            }
+            #canvas {
+                margin: 0 auto;
+                border: 1px solid black;
+                cursor: none;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas">
+            Sorry, your browser does not support HTML5 Canvas elements.
+        </canvas>
+        <canvas id="visualizer">
+            Sorry, your browser does not support HTML5 Canvas elements.
+        </canvas>
+        <audio id="music" hidden loop>
+            <source src="./songs/blocks.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="gameoversound" hidden>
+            <source src="./songs/gameover.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="pickupsound" hidden>
+            <source src="./songs/pickup.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script type="text/javascript" src="./bundle.js"></script>
+    </body>
+</html>
